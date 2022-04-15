@@ -53,6 +53,8 @@ Model Eight: Naive Bayes
 
 ### Conclusion
 •	After running the models, I used the following metrics: Accuracy, Precision, Recall and ROC Score to evaluate our model prediction performance. 
+
 •	We also did hyperparameter tuning on some models to increase their effectiveness and accuracy.
+
 •	Since AdaBoost classifier model has the highest metrics score , I chose it as the final model to use.
 
