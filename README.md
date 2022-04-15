@@ -15,3 +15,8 @@ My analysis will use Red Wine Quality Data Set, available on the UCI machine lea
 11. Residual sugar: the amount of sugar remaining after the fermentation process
 12. Quality – the score ranges between 3-8.
 
+
+### Data Preparation
+
+I explored the dataset to identify any missing or duplicate values. The data had 240 duplicated rows, so we removed those values.  Then, I analysed each column’s statistical summary to detect the outliers. I removed the outliers from the data by capping them using the z score method i.e. z = Data*mean +/- 3*std. I also ran a correlation analysis of the independent variables against the dependent variable, quality. This analysis showed a list of variables that had the highest correlations with quality and I dropped those who had high correlation i.e. >60%. 
+I set an arbitrary cut-off for the dependent variable (wine quality) at e.g. 6 or higher getting classified as 'good/1' and the remainder as 'not good/0' to make it a classification problem.
