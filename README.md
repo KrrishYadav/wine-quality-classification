@@ -25,6 +25,7 @@ I set an arbitrary cut-off for the dependent variable (wine quality) at e.g. 6 o
 ### Modelling
 
 Based on the EDA and correlation analysis, various classification models were used. We evaluated our model using the following metrics: Accuracy, Precision, Recall and ROC Score. We split the data randomly into training and testing data where we used the training data to train the models and testing data to test the model’s performance.
+
 Model One: Decision Tree
 “Decision tree uses a tree like structure to solve a problem in which each node represents an attribute, each link represents a decision rule and each leaf node represents an outcome.”
 
@@ -33,3 +34,25 @@ Model Two: Random Forest
 
 Model Three: Support Vector Machine
 “SVM is a supervised ML algorithm which is used for classification problems. It uses a technique called kernel trick to transfigure non-linear low dimension space to a higher dimension space to get linear classification/separator.”
+
+Model Four: Logistic Regression 
+“The Logistic Regression is a regression model which is used to analyse relationship between a dichotomous (in which the axis is divided into two branches) dependent variable and categorical or numerical independent variables. It actually combines the independent variables to estimate the probability that a particular event will occur.”
+
+Model Five: AdaBoost classifier
+“Ada-boost or Adaptive Boosting is an ensemble boosting algorithm which aims to convert a set of weak classifiers into a strong one. It can be used to boost the performance of any ML algorithm and is best used with weak learners.”
+
+  Model Six: XG Boost classifier
+“XG Boost (Extreme Gradient Boosting) uses the boosting algorithms and implements the gradient boosting decision tree algorithm. Gradient boosting is an approach where new models are created that predict the residuals or errors of prior models and then add it together to make the final prediction.”
+
+Model Seven: K-Nearest Neighbour (KNN)
+“KNN is a non-parametric ML algorithm, which works on close proximity (similar things are near to each other).”
+
+Model Eight: Naive Bayes
+“The naive Bayes Algorithm is a classification machine learning algorithms that helps to classify the data based upon the conditional probability.”
+
+
+### Conclusion
+•	After running the models, I used the following metrics: Accuracy, Precision, Recall and ROC Score to evaluate our model prediction performance. 
+•	We also did hyperparameter tuning on some models to increase their effectiveness and accuracy.
+•	Since AdaBoost classifier model has the highest metrics score , I chose it as the final model to use.
+
