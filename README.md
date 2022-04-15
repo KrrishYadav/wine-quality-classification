@@ -20,3 +20,16 @@ My analysis will use Red Wine Quality Data Set, available on the UCI machine lea
 
 I explored the dataset to identify any missing or duplicate values. The data had 240 duplicated rows, so we removed those values.  Then, I analysed each column’s statistical summary to detect the outliers. I removed the outliers from the data by capping them using the z score method i.e. z = Data*mean +/- 3*std. I also ran a correlation analysis of the independent variables against the dependent variable, quality. This analysis showed a list of variables that had the highest correlations with quality and I dropped those who had high correlation i.e. >60%. 
 I set an arbitrary cut-off for the dependent variable (wine quality) at e.g. 6 or higher getting classified as 'good/1' and the remainder as 'not good/0' to make it a classification problem.
+
+
+### Modelling
+
+Based on the EDA and correlation analysis, various classification models were used. We evaluated our model using the following metrics: Accuracy, Precision, Recall and ROC Score. We split the data randomly into training and testing data where we used the training data to train the models and testing data to test the model’s performance.
+Model One: Decision Tree
+“Decision tree uses a tree like structure to solve a problem in which each node represents an attribute, each link represents a decision rule and each leaf node represents an outcome.”
+
+Model Two: Random Forest
+“Random Forest is an ensemble bagging (bootstrap + aggregation) algorithm that works as a large collection of decision trees and merges them to obtain a more stable and accurate prediction through cross-validation.”
+
+Model Three: Support Vector Machine
+“SVM is a supervised ML algorithm which is used for classification problems. It uses a technique called kernel trick to transfigure non-linear low dimension space to a higher dimension space to get linear classification/separator.”
